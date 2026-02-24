@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Ochieng - Full Stack Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'binance-dark': '#0B0E11',
+                        'binance-darker': '#181A20',
+                        'binance-card': '#1E2329',
+                        'binance-yellow': '#F0B90B',
+                        'binance-hover': '#2B3139',
+                        'binance-border': '#2B3139',
+                        'binance-text': '#EAECEF',
+                        'binance-text-secondary': '#848E9C',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Barlow', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-binance-dark text-binance-text">
+    <!-- Navigation -->
+    <nav class="bg-binance-darker shadow-lg fixed w-full top-0 z-50 border-b border-binance-border">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold text-binance-yellow">Steven Ochieng</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-binance-text hover:text-binance-yellow transition">Home</a>
+                    <a href="#about" class="text-binance-text hover:text-binance-yellow transition">About</a>
+                    <a href="#projects" class="text-binance-text hover:text-binance-yellow transition">Projects</a>
+                    <a href="#skills" class="text-binance-text hover:text-binance-yellow transition">Skills</a>
+                    <a href="#contact" class="text-binance-text hover:text-binance-yellow transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-binance-text">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-binance-text hover:text-binance-yellow">Home</a>
+                <a href="#about" class="block py-2 text-binance-text hover:text-binance-yellow">About</a>
+                <a href="#projects" class="block py-2 text-binance-text hover:text-binance-yellow">Projects</a>
+                <a href="#skills" class="block py-2 text-binance-text hover:text-binance-yellow">Skills</a>
+                <a href="#contact" class="block py-2 text-binance-text hover:text-binance-yellow">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-binance-dark min-h-screen flex items-center">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="mb-8">
+                    <img src="./assets/img/avataaars.svg" alt="profile image"  class="w-48 h-48 mx-auto rounded-full flex items-center justify-center text-binance-dark text-6xl font-bold shadow-2xl shadow-binance-yellow/20">
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold text-binance-text mb-4">Steven Ochieng</h1>
+                <p class="text-2xl md:text-3xl text-binance-yellow mb-6">Full Stack Developer</p>
+                <p class="text-xl text-binance-text-secondary mb-8">Python/Django & Vue.js/Nuxt.js Specialist</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="https://github.com/Stevetatu" target="_blank" class="text-binance-text hover:text-binance-yellow transition text-3xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="text-binance-text hover:text-binance-yellow transition text-3xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:stevetatu3@gmail.com" class="text-binance-text hover:text-binance-yellow transition text-3xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#projects" class="bg-binance-yellow text-binance-dark px-8 py-3 rounded-lg hover:bg-yellow-500 transition font-semibold">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="bg-transparent text-binance-yellow px-8 py-3 rounded-lg hover:bg-binance-hover transition font-semibold border-2 border-binance-yellow">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-binance-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">About Me</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-binance-card p-8 rounded-lg shadow-lg border border-binance-border">
+                    <p class="text-lg text-binance-text-secondary mb-6 leading-relaxed">
+                        Hello! I'm Steven OChieng, a Kenyan Full Stack Developer with over 4 years of experience in software development. I specialize in backend engineering, building secure, scalable, and high-performance web applications using Python and Django.
+                        My expertise lies in designing robust APIs, architecting database systems, optimizing performance, and developing AI-powered solutions that power modern web platforms. I have extensive experience working with relational databases, authentication systems, background task processing, and integrating third-party services.
+                        While I’m comfortable across the full stack with Vue.js/Nuxt.js, my core strength is in backend architecture, system design, and building reliable server-side applications that scale.
+                        I focus on writing clean, maintainable code and delivering production-ready systems that solve real-world problems.
+                    </p> 
+                    <p class="text-lg text-binance-text-secondary mb-6 leading-relaxed">
+                        I've successfully built and launched multiple production applications, including <strong class="text-binance-yellow">scratcho-africa</strong>, 
+                        a mobile application connecting Kenyan basketball fans, teams, and players through interactive community features. My expertise spans the entire software development lifecycle from backend architecture and database design to API development, deployment, and long-term system maintenance with a strong focus on building scalable and reliable backend systems
+                    </p>
+                    <p class="text-lg text-binance-text-secondary mb-6 leading-relaxed">
+                        Python has been my primary programming language since 2022, and I've built most of my projects using 
+                        Django as the backend framework. I'm proficient in Django REST Framework for API development, and I use 
+                        modern frontend technologies like Nuxt.js, and Tailwind CSS to create responsive user interfaces.
+                    </p>
+                    <p class="text-lg text-binance-text-secondary leading-relaxed">
+                       I am a Bachelor of Science student in Mathematics and Computer Science at Kenyatta University.
+                        Beyond development, I’m deeply passionate about AI integration, having worked extensively with OpenAI GPT-4 and Claude APIs 
+                        to build intelligent, agentic systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-binance-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1: Chasemyinvoices -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/scratcho.png" alt="chasemyinvoices screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">scratcho-africa</h3>
+                        <p class="text-binance-text-secondary mb-4">A mobile application connecting Kenyan basketball fans, teams, and players with community features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">react-native</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PostgreSQL</span>
+                        </div>
+                        <a href="https://scracho-africa.vercel.app/" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Subliminal I AM -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/subliminaliam.png" alt="Subliminal I AM screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Subliminal I AM</h3>
+                        <p class="text-binance-text-secondary mb-4">Cross-platform subliminal audio application with AI voice generation using ElevenLabs technology.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Electron</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">ElevenLabs</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Celery</span>
+                        </div>
+                        <a href="https://subliminaliam.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Guruwritershub
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/guruwritershub.png" alt="Guruwritershub screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Guruwritershub</h3>
+                        <p class="text-binance-text-secondary mb-4">Marketplace platform connecting students with expert writers, featuring payment processing and order management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PayPal</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Flutterwave</span>
+                        </div>
+                        <a href="https://www.guruwritershub.com" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div> -->
+
+                <!-- Project 4: VoltageITLabs -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/earthplan.png" alt="VoltageITLabs screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Earthplan Construction</h3>
+                        <p class="text-binance-text-secondary mb-4">A web platform developed to support a modern construction company with a strong digital presence</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Tailwind</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">PostgreSQL</span>
+                        </div>
+                        <a href="https://www.earthplanconstructionltd.com/" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: CEB Mauritius
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/ceb.png" alt="CEB screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">CEB Mauritius Portal</h3>
+                        <p class="text-binance-text-secondary mb-4">Customer portal for Central Electricity Board serving 400K+ users with authentication and email automation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Django</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Tailwind</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">AWS SES</span>
+                        </div>
+                        <a href="https://cebbetatest.mu.cebcoop.mu/" target="_blank" class="text-binance-yellow hover:text-yellow-500 font-semibold">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div> -->
+
+                <!-- Project 6: House Price Prediction -->
+                <div class="bg-binance-card rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:shadow-binance-yellow/10 transition transform hover:-translate-y-2 border border-binance-border">
+                    <img src="./assets/img/portfolio/bankbridgeapi.png" alt="CEB screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-binance-text">Bankbridgeapi</h3>
+                        <p class="text-binance-text-secondary mb-4">Banking Orchestration API for kenyan banks. Developers can integrate with multiple banks using a single unified API.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Python</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Tailwind</span>
+                            <span class="bg-binance-hover text-binance-yellow px-3 py-1 rounded-full text-sm border border-binance-border">Next.js</span>
+                        </div>
+                        <button class="bg-orange border border-orange-400 text-orange-400 rounded-lg p-3">Under development</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-binance-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">Technical Skills</h2>
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-server text-binance-yellow mr-3"></i> Backend Development
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Python</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Django</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Django REST Framework</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Celery</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Redis</span>
+                    </div>
+                </div>
+
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-laptop-code text-binance-yellow mr-3"></i> Frontend Development
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">JavaScript</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">TypeScript</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Vue.js</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Nuxt.js</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-robot text-binance-yellow mr-3"></i> AI & Machine Learning
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">OpenAI GPT-4</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Claude API</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">LangGraph</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">ML Models</span>
+                    </div>
+                </div>
+
+                <div class="bg-binance-card p-6 rounded-lg shadow-lg border border-binance-border">
+                    <h3 class="text-2xl font-bold mb-4 text-binance-text flex items-center">
+                        <i class="fas fa-database text-binance-yellow mr-3"></i> Databases & DevOps
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">PostgreSQL</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">MySQL</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">AWS</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Railway</span>
+                        <span class="bg-binance-hover text-binance-yellow px-4 py-2 rounded-lg border border-binance-border">Docker</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-binance-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-binance-text">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto bg-binance-card rounded-lg shadow-xl p-8 border border-binance-border">
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-user text-binance-yellow text-2xl w-12"></i>
+                        <div>
+                            <p class="font-semibold text-binance-text">Name</p>
+                            <p class="text-binance-text-secondary">Steven Ochieng</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-binance-yellow text-2xl w-12"></i>
+                        <div>
+                            <p class="font-semibold text-binance-text">Email</p>
+                            <a href="mailto:zeroday435@gmail.com" class="text-binance-yellow hover:text-yellow-500">stevetatu3@gmail.com</a>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-binance-yellow text-2xl w-12"></i>
+                        <div>
+                            <p class="font-semibold text-binance-text">Phone</p>
+                            <p class="text-binance-text-secondary">+254 111743475</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-binance-yellow text-2xl w-12"></i>
+                        <div>
+                            <p class="font-semibold text-binance-text">Location</p>
+                            <p class="text-binance-text-secondary">Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-binance-border">
+                    <h3 class="text-xl font-bold mb-4 text-binance-text">Connect With Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Stevetatu" target="_blank" class="bg-binance-hover text-binance-yellow p-3 rounded-lg hover:bg-binance-border transition border border-binance-border">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <!-- <a href="https://www.linkedin.com/in/hemstone-omollo-246122194" target="_blank" class="bg-binance-hover text-binance-yellow p-3 rounded-lg hover:bg-binance-border transition border border-binance-border">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-binance-darker text-binance-text-secondary py-8 border-t border-binance-border">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 Steven Ochieng.| All rights reserved.</p>
+            <p class="mt-2">Built with HTML5, CSS3, JavaScript & Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
